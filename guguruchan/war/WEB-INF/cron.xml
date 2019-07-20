@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <!-- 10分おきにツイートを収集・解析する -->
+  <cron>
+    <url>/cron/gather</url>
+    <description>gather tweets</description>
+    <schedule>every 10 minutes</schedule>
+    <timezone>Asia/Tokyo</timezone>
+  </cron>
+  <!-- 毎日午前3時にフォロー返しをする -->
+  <cron>
+    <url>/cron/refollow</url>
+    <description>refollow followers</description>
+    <schedule>every day 03:00</schedule>
+    <timezone>Asia/Tokyo</timezone>
+  </cron>
+  <!-- 毎日午前4時にフォロー外しをする -->
+  <cron>
+    <url>/cron/unfollow</url>
+    <description>unfollow friends</description>
+    <schedule>every day 04:00</schedule>
+    <timezone>Asia/Tokyo</timezone>
+  </cron>
+  <!-- 1時間おきにツイートする -->
+  <cron>
+    <url>/cron/tweet</url>
+    <description>tweet</description>
+    <schedule>every 1 hours</schedule>
+    <timezone>Asia/Tokyo</timezone>
+  </cron>
+</cronentries>

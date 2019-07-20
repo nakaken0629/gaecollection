@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <!-- 6時間ごとに新しい問題を登録する -->
+  <cron>
+    <url>/cron/makeanswer</url>
+    <description>gather tweets</description>
+    <schedule>every 6 hours</schedule>
+    <timezone>Asia/Tokyo</timezone>
+  </cron>
+</cronentries>
